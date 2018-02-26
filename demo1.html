@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>例子</title>
+	<meta name="name" content="content"  charset="utf-8">
+</head>
+<style type="text/css" media="screen">
+	#demo{
+		width:100px;
+		height:100px;
+		
+		background:red;
+	}
+	.myclass{
+		color:green;
+	}
+	.red{
+		background:red;
+	}
+	.green{ 
+	}
+</style>
+<body>
+<div id="demo">
+	wwww
+</div>   
+<button>1</button>                                                                    
+<button>2</button>
+<button>3</button>
+<button>4</button>
+<button>5</button>
+	<ul>
+		<li>li1</li>
+		<li>li2</li>
+		<li>li3</li>
+	</ul>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$('#demo').addClass("myclass");  
+	console.log($("div"));
+	// var btns = document.querySelectorAll('button');
+	// for(var i = 0; i<btns.length; i++){
+	// 	btns[i].index=i;
+	// 	btns[i].onclick=function(){ 
+	// 		alert(this.index);
+	// 	}
+	// }
+	$('button').click(function(){
+		console.log($(this).index())
+	})
+		// function fn(n){
+		// 	if(typeof n!='number'||isNaN(n)||n>31||n<=0){
+		// 		throw"参数类型有误！";
+		// 	}
+		// 	function getRandom(){
+		// 		return Math.floor(Math.random()*10);
+		// 	}
+		// 	var arr=[],n1,n2,temp;
+		// 	for(var i=0;i<n;i++;){
+		// 		// n1=getRandom();
+		// 		// n2=getRandom();
+		// 		// temp=n2*10+n1;
+		// 		while(arr.indexOf(temp)!=-1||(temp<2||temp>32)){
+		// 			n1=getRandom();
+		// 			n2=getRandom();
+		// 			temp=n2*10+n1;
+		// 		}
+		// 		arr.push(temp);
+		// 	}
+		// 	return arr;
+		// }
+		// console.log(fn(30));
+	var $ul = $('ul');
+		$ul.addClass('red');
+</script>
+</body>
+</html>
